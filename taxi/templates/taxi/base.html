@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <title>{% block title %}Taxi Service{% endblock %}</title>
   <style>
-    /* Просто базові стилі для прикладу */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -49,6 +48,8 @@
   <main>
     {% block content %}
     {% endblock %}
+
+    {% include "taxi/includes/pagination.html" %}
   </main>
 
 </body>
